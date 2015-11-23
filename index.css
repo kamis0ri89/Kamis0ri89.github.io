@@ -87,13 +87,11 @@
 		
 		
 }
-	.content iframe {
-		height: 900px;
-		width: 1650px;
-		overflow: hidden;
-		
-		
-}
+
+	.Front {
+		height: 200px;
+		width: 400px;
+	}
 
   .right  {
     background-color: #a0b9df;
