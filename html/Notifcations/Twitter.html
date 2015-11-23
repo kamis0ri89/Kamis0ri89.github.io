@@ -1,0 +1,97 @@
+<html>
+	<head>
+		<title>My Stream Animated Panels</title>
+		<meta http-equiv="refresh" content="100;URL=youtube.html">
+		<style>
+			@font-face {
+				font-family: 'ComicNoteSmooth';
+				src: url('fonts/ComicNoteSmooth.ttf');
+				}
+			@font-face {
+				font-family: 'SF Slapstick Comic Shaded'
+				src: url('fonts/SF Slapstick Comic Shaded.ttf');
+				}
+			#reminderContainer {
+				width: 0px;
+				height: 0px;
+				background: #ffb637;
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				overflow: hidden;
+				color: black;
+				font-family: 'ComicNoteSmooth';
+				-webkit-box-shadow: 0px 0px 20px #007bda;
+				-webkit-animation: test 10s 0s 1;
+				}
+			#reminderHeader {
+				width: 400px;
+				height: 40px;
+				background: #1c86ee;
+				position: relative;
+				overflow: hidden;
+				text-align: center;
+				font-size: 40px;
+				}
+			#reminder {
+				position: relative;
+				width: 260px;
+				height: 40px;
+				float: center;
+				right: 15px;
+				top: 0px;	
+				background: #1c86ee;
+				overflow: hidden;
+				}
+			#reminderContent {
+				width: 400px;
+				height: 100px;
+				background: #ffb637;
+				position: relative;
+				color: black;
+				font-size: 22px;
+				left: 20px;
+				top: 5px;
+				}
+			#twitchLogo {
+				position: relative;
+				width: 50px;
+				height: 50px;
+				float: left;
+				right: 15px;
+				top: 0px;				
+				}
+			@-webkit-keyframes test {
+				0%, 100% {
+					width: 0px;
+					height: 40px;
+					}
+				20%, 80% {
+					width: 400px;
+					height: 40px;
+					}
+				30%, 70% {
+					width: 400px;
+					height: 100px;
+					}
+				}
+		</style>		
+	</head>
+	<body>
+		<div id="reminderContainer">
+			<div id="reminderHeader">
+				<span><image id="reminder" src="images\Twitter.png" ></span>
+			</div>
+
+			<div id="reminderContent">
+				<image id="twitchLogo" src="images\twitterlogo.png">
+				<div="reminderContentText">
+					<span>
+						Don't forget to follow my twitter<br>
+						@remarkablem3
+					</span>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

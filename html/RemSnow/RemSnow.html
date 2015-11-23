@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>RemSnow</title>
+<style>
+body {
+	background-color: #1d1d1d;       
+    margin: 0px;
+	
+}
+#snowflakeContainer {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+.snowflake {
+    padding-left: 15px;
+    font-family: Cambria, Georgia, serif;
+    font-size: 14px;
+    line-height: 24px;
+    position: fixed;
+    color: #FFFFFF;
+    user-select: none;
+    z-index: 1000;
+}
+.snowflake:hover {
+    cursor: default;
+}
+#background {
+    position: fixed;
+    width: 1920px;
+    height: 1080px;
+    background-image: url("image/lights4.gif");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+    
+}
+</style>
+</head>
+<body> 
+<div id="background">
+	<div id="snowflakeContainer">
+		<p class="snowflake">*</p>
+	</div>
+	<script src="fallingsnow_v6.js"></script>
+</div>
+</body>
+ 
+</html>
