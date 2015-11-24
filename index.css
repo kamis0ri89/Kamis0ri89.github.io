@@ -71,6 +71,8 @@
 	text-align:center;
 	display: inline;
 	position:relative;
+	word-spacing:20px;
+	
 }
 	.content img {
 		padding-right: 10px;
@@ -87,7 +89,6 @@
 		
 		
 }
-
 	.Front {
 		height: 200px;
 		width: 400px;
