@@ -16,20 +16,20 @@
  }
   .container  {
     width: 1920px;
-     margin-left: auto;
-     margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 	.body {
-	 height: 1080px;
-	 width: 1920px;
+	height: 1080px;
+	width: 1920px;
 	}
   .header  {
     background-color: #4072bf;
 }
   .header h1  {
     color: white;
-     line-height: 90px;
-     text-align: center;
+    line-height: 90px;
+    text-align: center;
     font-family:  Header;
 	letter-spacing: 0px;
 	font-size: 50px;
@@ -38,31 +38,30 @@
 }
   .header img  {
     float: left;
-     height: 90px;
-     width: 90px;
-     padding: 5px;
-     margin-right: 20px;
-	
+    height: 90px;
+    width: 90px;
+    padding: 5px;
+    margin-right: 20px;	
 }
   .nav  {
     background-color: #a0b9df;
-     width: 125px;
-	 height: 1000px;
-     float: left;
+    width: 125px;
+	height: 1000px;
+    float: left;
     font-family:  content;
 	overflow:hidden;	
 }
   .nav ul  {
     margin: -15px;
-     list-style-type: circle;
+    list-style-type: circle;
     font-family:  content;
 	float:left
 }
    .leftad {
     background-color: #000000;
-     width: 125px;
-	 height: 1000px;
-     float: left;
+    width: 125px;
+	height: 1000px;
+    float: left;
     font-family: content;
 	Margin-top:20px;
 	z-index:-2;	
@@ -77,9 +76,9 @@
 }
 	.rightad  {
     background-color: #000000;
-     width: 125px;
-	 height: 1000px;
-     float: right;
+    width: 125px;
+	height: 1000px;
+    float: right;
     font-family: content;
 	Margin-top:12px;
 	z-index:-1;
@@ -95,41 +94,42 @@
 	word-spacing:20px;	
 }
 	.content img {
-		padding-right: 10px;
-		padding-bottom: 10px;
-		position:relative;
-		border: 1px solid grey;
-		display: inline;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	position:relative;
+	border: 1px solid grey;
+	display: inline;
 }
 	.content ul {
-		display: inline;
-		Position: center;
-		word-spacing: 30px;
-		font-size: 30px;
-		font-weight:bold;
-		line-height: 90px;		
+	display: inline;
+	Position: center;
+	word-spacing: 30px;
+	font-size: 30px;
+	font-weight:bold;
+	line-height: 90px;		
 }
 	.content p {
-		word-spacing: 400px;
-		font-size:30px;
-		font-weight:bold;		
+	word-spacing: 400px;
+	font-size:30px;
+	font-weight:bold;		
 	}
 	.Front {
-		height: 200px;
-		width: 400px;
-		Position:center;
+	height: 200px;
+	width: 400px;
+	Position:center;
 	}
 	.bottomad  {
+	display: inline;
     background-color: #000000;
-     width: 1920px;
-	 height: 100px;
-     float: left;
+    width: 1920px;
+	height: 100px;
+    float: left;
     font-family: content;
 	Margin-bottom:40px;
 	}	
   .footer  {
     clear: left;
-     background-color: #a0b9df;
+    background-color: #a0b9df;
     font-family:content;	
 }
 </style>
