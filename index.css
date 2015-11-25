@@ -8,15 +8,12 @@
     padding: 0;
      margin: 0;
 }
-
   a  {
     text-decoration: none;
 }
-
   p  {
     padding-left: 10px;
  }
-
   .container  {
     width: 1920px;
      margin-left: auto;
@@ -29,7 +26,6 @@
   .header  {
     background-color: #4072bf;
 }
-
   .header h1  {
     color: white;
      line-height: 90px;
@@ -38,41 +34,65 @@
 	letter-spacing: 0px;
 	font-size: 50px;
 	font-family: Header; src: url('fonts/Altgotisch.ttf');
-	padding-right:90px;
+	padding-right:90px;	
 }
-
   .header img  {
     float: left;
      height: 90px;
      width: 90px;
      padding: 5px;
      margin-right: 20px;
+	
 }
   .nav  {
     background-color: #a0b9df;
-     width: 115px;
-	 height: 150px;
+     width: 125px;
+	 height: 1000px;
      float: left;
     font-family:  content;
+	overflow:hidden;
 }
-
   .nav ul  {
     margin: -15px;
      list-style-type: circle;
     font-family:  content;
 	float:left
 }
-
+   .leftad {
+    background-color: #000000;
+     width: 125px;
+	 height: 960px;
+     float: left;
+    font-family: content;
+	Margin-top:50px;
+	z-index:-2;	
+}
+  .right  {
+    background-color: #a0b9df;
+    float: right;
+	height: 1000px;
+    width: 125px;
+    font-family:  content;
+	overflow:hidden;	
+}
+	.rightad  {
+    background-color: #000000;
+     width: 125px;
+	 height: 1000px;
+     float: right;
+    font-family: content;
+	Margin-top:40px;
+	z-index:-1;
+}
   .content  {
     float: left;
-     width: 1690px;
+    width: 1670px;
     color: White;
     font-family:  content;
 	text-align:center;
 	display: inline;
 	position:relative;
-	word-spacing:20px;
-	
+	word-spacing:20px;	
 }
 	.content img {
 		padding-right: 10px;
@@ -83,31 +103,35 @@
 }
 	.content ul {
 		display: inline;
-		Position: left;
+		Position: center;
 		word-spacing: 30px;
-		font-size: 20px;
-		
-		
+		font-size: 30px;
+		font-weight:bold;
+		line-height: 90px;		
 }
+	.content p {
+		word-spacing: 400px;
+		font-size:30px;
+		font-weight:bold;		
+	}
 	.Front {
 		height: 200px;
 		width: 400px;
 		Position:center;
 	}
-
-  .right  {
-    background-color: #a0b9df;
-     float: right;
-     width: 115px;
-    font-family:  content;
-}
-
+	.bottomad  {
+    background-color: #000000;
+     width: 1920px;
+	 height: 100px;
+     float: left;
+    font-family: content;
+	Margin-bottom:40px;
+	}	
   .footer  {
     clear: left;
      background-color: #a0b9df;
-    font-family:  content;
+    font-family:content;	
 }
-
 </style>
 </head>
 <body>
