@@ -47,10 +47,10 @@
   .nav  {
     background-color: #a0b9df;
      width: 125px;
-	 height: 600px;
+	 height: 1000px;
      float: left;
     font-family:  content;
-	overflow:hidden;
+	overflow:hidden;	
 }
   .nav ul  {
     margin: -15px;
@@ -64,13 +64,13 @@
 	 height: 1000px;
      float: left;
     font-family: content;
-	Margin-top:50px;
+	Margin-top:20px;
 	z-index:-2;	
 }
   .right  {
     background-color: #a0b9df;
     float: right;
-	height: 600px;
+	height: 1000px;
     width: 125px;
     font-family:  content;
 	overflow:hidden;	
@@ -81,7 +81,7 @@
 	 height: 1000px;
      float: right;
     font-family: content;
-	Margin-top:40px;
+	Margin-top:12px;
 	z-index:-1;
 }
   .content  {
