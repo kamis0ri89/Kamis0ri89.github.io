@@ -47,7 +47,7 @@
   .nav  {
     background-color: #a0b9df;
      width: 125px;
-	 height: 1000px;
+	 height: 600px;
      float: left;
     font-family:  content;
 	overflow:hidden;
@@ -61,7 +61,7 @@
    .leftad {
     background-color: #000000;
      width: 125px;
-	 height: 960px;
+	 height: 1000px;
      float: left;
     font-family: content;
 	Margin-top:50px;
@@ -70,7 +70,7 @@
   .right  {
     background-color: #a0b9df;
     float: right;
-	height: 1000px;
+	height: 600px;
     width: 125px;
     font-family:  content;
 	overflow:hidden;	
