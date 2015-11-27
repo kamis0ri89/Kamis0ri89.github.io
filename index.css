@@ -49,6 +49,7 @@
     width: 90px;
 	position:fixed;
 	left:20px;
+	z-index:2;
 }
   .nav  {
     background-color: #a0b9df;
