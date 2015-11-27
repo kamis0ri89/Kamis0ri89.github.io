@@ -14,34 +14,41 @@
   p  {
     padding-left: 10px;
  }
+ @font-face {
+  font-family: 'Germania-Shadow';
+  src: url('fonts/Germania-Shadow.ttf');  
+	}
   .container  {
     width: 1920px;
     margin-left: auto;
     margin-right: auto;
+	float:left;
 }
 	.body {
 	height: 1080px;
 	width: 1920px;
+}
+	.header {
+	background-image:url(Images/1.png);
+	background-position:center;
+	background-repeat:no-repeat;
+		
 	}
-  .header  {
-    background-color: #4072bf;
-}
   .header h1  {
-    color: white;
+    color: black;
     line-height: 90px;
-    text-align: center;
-    font-family:  Header;
-	letter-spacing: 0px;
-	font-size: 50px;
-	font-family: Header; src: url('fonts/Altgotisch.ttf');
-	padding-right:90px;	
+    text-align: center;    
+	letter-spacing: 10px;
+	font-size: 60px;
+	font-family:Germania-Shadow;		
 }
+	
   .header img  {
     float: left;
     height: 90px;
     width: 90px;
-    padding: 5px;
-    margin-right: 20px;	
+	position:fixed;
+	left:20px;
 }
   .nav  {
     background-color: #a0b9df;
@@ -98,6 +105,12 @@
 	padding-bottom: 10px;
 	position:relative;	
 	display: inline;
+	border-bottom-color: #a0b9df;    
+    border-style: solid;
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+    padding-right: 0px
 }
 	.content ul {
 	display: inline;
@@ -116,8 +129,8 @@
 	width: 35px;
 	padding: 5px;
 	border: 0;
-	box-shadow: 0;
 	display: inline;
+	
 }
 	.Front {
 	height: 200px;
