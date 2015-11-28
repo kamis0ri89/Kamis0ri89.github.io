@@ -58,76 +58,90 @@
     
 			<!-- Buffer -->
 				<a href="https://bufferapp.com/add?url=https://TwitchUpgrades.com&amp;text=Simple Share Buttons" target="_blank">
-					<img src="https://simplesharebuttons.com/images/somacro/buffer.png" alt="Buffer" />
+					<img src="Images/2.png" alt="Buffer" />
 				</a>
     
 			<!-- Digg -->
 				<a href="http://www.digg.com/submit?url=https://TwitchUpgrades.com" target="_blank">
-					<img src="https://simplesharebuttons.com/images/somacro/diggit.png" alt="Digg" />
+					<img src="Images/3.png" alt="Digg" />
 				</a>
  
 			<!-- Facebook -->
 				<a href="http://www.facebook.com/sharer.php?u=https://TwitchUpgrades.com" target="_blank">
-					<img src="https://simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" />
+					<img src="Images/4.png" alt="Facebook" />
 				</a>
     
 			<!-- Google+ -->
 				<a href="https://plus.google.com/share?url=https://TwitchUpgrades.com&amp" target="_blank">
-					<img src="https://simplesharebuttons.com/images/somacro/google.png" alt="Google" />
+					<img src="Images/5.png" alt="Google" />
 				</a>
     
 			<!-- LinkedIn -->
 				<a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://TwitchUpgrades.com" target="_blank">
-					<img src="https://simplesharebuttons.com/images/somacro/linkedin.png" alt="LinkedIn" />
+					<img src="Images/6.png" alt="LinkedIn" />
 				</a>
     
 			<!-- Reddit -->
 				<a href="http://reddit.com/submit?url=https://TwitchUpgrades.com&amp;title=Kamis0ri89" target="_blank">
-					<img src="https://simplesharebuttons.com/images/somacro/reddit.png" alt="Reddit" />
+					<img src="Images/7.png" alt="Reddit" />
 				</a>
     
 			<!-- StumbleUpon-->
 				<a href="http://www.stumbleupon.com/submit?url=https://Twitchupgrades.com&amp;title=Kamis0ri89" target="_blank">
-					<img src="https://simplesharebuttons.com/images/somacro/stumbleupon.png" alt="StumbleUpon" />
+					<img src="Images/8.png" alt="StumbleUpon" />
 				</a>
     
 			<!-- Tumblr-->
 				<a href="http://www.tumblr.com/share/link?url=https://Twitchupgrades.com&amp;title=Kamis0ri89" target="_blank">
-					<img src="https://simplesharebuttons.com/images/somacro/tumblr.png" alt="Tumblr" />
+					<img src="Images/9.png" alt="Tumblr" />
 				</a>
      
 			<!-- Twitter -->
 				<a href="https://twitter.com/share?url=https://Twitchupgrades.com&amp;text=Check%20This%20Site%20Out%20hit&#33%20&#64Kamis0ri89%20with%20a%20Follow%20for%20current%20updates&amp " target="_blank">
-					<img src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" />
+					<img src="Images/10.png" alt="Twitter" />
 				</a>
     
 			<!-- VK -->
 				<a href="http://vkontakte.ru/share.php?url=https://Twitchupgrades.com&amp; "target="_blank">
-					<img src="https://simplesharebuttons.com/images/somacro/vk.png" alt="VK" />
+					<img src="Images/11.png" alt="VK" />
 				</a>
 
 			</div>
+			
+			<div id="stream" src="iframe.js">
+				<script>document.addEventListener("DOMContentLoaded", function () {
+
+					var node = document.getElementById("stream");
+ 
+						var channels = ["Anniebot", "Braxas19", "Crizzy1994", "DreamKazper", "Jakehounds13", "Jannso", "Kamis0ri89", "Mom92", "Painlessdeath22", "Raynaud05", "RemarkableMe", "Souvie"];
+						var request = new XMLHttpRequest();
+							request.addEventListener("load", function (e) {
+						var data = JSON.parse(request.responseText);
+						var live = data.streams.map(function (stream) {return stream.channel.name});
+       
+						var random, iframe;
+							if (live.length > 0) {
+							random = live[Math.floor(Math.random() * live.length)];
+ 
+                        var iframe = document.createElement("iframe");
+							iframe.src = "http://www.twitch.tv/" + random + "/embed";
+							node.appendChild(iframe);
+							node.removeAttribute("hidden");
+							iframe.width = "1080";
+							iframe.height = "520";
+						
+						}
+						});
+ 
+						request.open("GET", "https://api.twitch.tv/kraken/streams?channel=" + channels.join(","));
+						request.send();
+						});
+						
+				</script>
+			</div>
             <p><strong><h1>Clients</h1></strong></p>
 			<ul>
-				<p>Anniebot Braxas19 Crizzy1994</p></br>
-				<iframe class="Front" src="http://player.twitch.tv/?channel=anniebot" frameborder="0" scrolling="no" height="200" width="400" ></iframe>
-				<iframe class="Front" src="http://player.twitch.tv/?channel=braxas19" frameborder="0" scrolling="no" height="200" width="400"></iframe>
-				<iframe class="Front" src="http://player.twitch.tv/?channel=crizzy1994" frameborder="0" scrolling="no" height="200" width="400"></iframe>
-				</br>
-				<p>DreamKazper Jakehounds13 Jannso</p></br>
-				<iframe class="Front" src="http://player.twitch.tv/?channel=DreamKazper" frameborder="0" scrolling="no" height="200" width="400"></iframe>
-				<iframe class="Front" src="http://player.twitch.tv/?channel=Jakehounds13" frameborder="0" scrolling="no" height="200" width="400"></iframe>
-				<iframe class="Front" src="http://player.twitch.tv/?channel=Jannso" frameborder="0" scrolling="no" height="200" width="400"></iframe>
-				</br>
-				<p>Kamis0ri89 Mom92 Painlessdeath22</p></br>
-				<iframe class="Front" src="http://player.twitch.tv/?channel=Kamis0ri89" frameborder="0" scrolling="no" height="200" width="400"></iframe>
-				<iframe class="Front" src="http://player.twitch.tv/?channel=Mom92" frameborder="0" scrolling="no" height="200" width="400"></iframe>
-				<iframe class="Front" src="http://player.twitch.tv/?channel=Painlessdeath22" frameborder="0" scrolling="no" height="200" width="400"></iframe>
-				</br>
-				<p>Raynaud05 RemarkableMe Souvie</p></br>
-				<iframe class="Front" src="http://player.twitch.tv/?channel=Raynaud05" frameborder="0" scrolling="no" height="200" width="400"></iframe>
-				<iframe class="Front" src="http://player.twitch.tv/?channel=remarkableme" frameborder="0" scrolling="no" height="200" width="400"></iframe>
-				<iframe class="Front" src="http://player.twitch.tv/?channel=Souvie" frameborder="0" scrolling="no" height="200" width="400"></iframe>
+				Anniebot Braxas19 Crizzy1994 DreamKazper Jakehounds13 Jannso Kamis0ri89 Mom92 Painlessdeath22 Raynaud05 RemarkableMe Souvie		
 			</ul>
         </div>
 

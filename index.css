@@ -121,17 +121,11 @@
 	font-weight:bold;
 	line-height: 90px;		
 }
-	.content p {
-	word-spacing: 400px;
-	font-size:30px;
-	font-weight:bold;		
-	}
 	.share-buttons img {
 	width: 35px;
 	padding: 5px;
 	border: 0;
-	display: inline;
-	
+	display: inline;	
 }
 	.Front {
 	height: 200px;
@@ -150,7 +144,7 @@
   .footer  {
     clear: left;
     background-color: #a0b9df;
-    font-family:content;	
+    font-family:content;
 }
 </style>
 </head>
