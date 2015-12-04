@@ -1,0 +1,68 @@
+<html>
+<head>
+		<title>Kamis0ri89</title>
+		<style>
+			 @font-face {
+  font-family: 'SF Slapstick Comic Shaded';
+  src: url('SF Slapstick Comic Shaded.ttf');  
+	}
+			body{
+					font-size:90px;
+					font-family:SF Slapstick Comic Shaded;
+					color:black;
+					font-weight:bold;
+					
+				}
+			#body img{
+					position:absolute;
+					left:0;
+					top:0;
+					z-index:-1;					
+				}
+			#viewer_counter{
+					position:absolute;
+					left:1200px;
+					top:1615px;
+				}	
+		</style>
+	<style type="text/css">
+	</style>
+</head>
+	<body>
+		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript">
+			var username = "Remarkableme";
+			
+		</script>
+		<script type="text/javascript">		
+		$(document).ready(function() {
+			loadViewers();
+		function loadViewers(){
+			$.getJSON('https://api.twitch.tv/kraken/streams/'+encodeURIComponent(username)+"?callback=?", function(data) {
+
+			if(data["stream"]!=null){
+				if(data['streams']){
+					$('#viewer_counter').html("Channel offline.");
+				}else{
+						var viewer_count = data['stream']['viewers'];
+						$('#viewer_counter').html(viewer_count);
+						console.log(data);
+				}
+			}else{
+					$('#viewer_counter').html("Channel offline.");
+			}
+			});
+		}
+			setInterval(function(){
+				loadViewers();
+			}, 10000);
+		});
+		</script>
+		<div id="viewer_counter"></div>
+		<div id="pic">
+		<img src="123.png">
+		</div>
+
+	
+</body>
+</html>
