@@ -23,6 +23,9 @@
 	src: url('fonts/Enigma__2.ttf')
 }
   .container  {
+	background-image:url(Images/BG.png);
+	background-position:center;
+	background-repeat:no-repeat;
     width: 1920px;
     margin-left: auto;
     margin-right: auto;
@@ -56,23 +59,20 @@
 	z-index:2;
 }
   .nav  {
-    background-color: #000000;
+    background-color: rgba(0, 0, 0, 0);
     width: 1920px;
-	height: 50px;
+	height: 120px;
 	display: block;
 	font-family:  content;
 	font-size:25px;	
 	text-align:center;
 	overflow:hidden;
-	position:relative;		
-    padding-bottom: 20px;
-    padding-top: 20px;
-    border-bottom-width: 20px;
-    margin-bottom: 20px;
+	position:relative;	    
+    padding-top: 20px;    
 }
 
    .leftad {
-    background-color: #000000;
+    background-color: rgba(0, 0, 0, 0);
     width: 200px;
 	height: 1000px;
     float: left;
@@ -82,7 +82,7 @@
 }
 
 	.rightad  {
-    background-color: #000000;
+    background-color: rgba(0, 0, 0, 0);
     width: 200px;
 	height: 1000px;
     float: right;
@@ -91,10 +91,11 @@
 	z-index:-1;
 }
   .content  {
+	background-color: #a0b9df;
     float: left;
     width: 1520px;
 	left:0;
-    color: White;
+    color: Black;
     font-family:  content;
 	text-align:center;
 	display: inline;
@@ -123,9 +124,12 @@
 	font-weight:bold;
 	line-height: 90px;		
 }
+	.share-buttons{
+	padding-top:20px;
+	}
 	.share-buttons img {
 	width: 35px;
-	padding: 5px;
+	padding: 5px;	
 	border: 0;
 	display: inline;	
 }
@@ -136,7 +140,7 @@
 	}
 	.bottomad  {
 	display: inline;
-    background-color: #000000;
+    background-color: rgba(0, 0, 0, 0);
     width: 1920px;
 	height: 100px;
     float: left;
