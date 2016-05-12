@@ -30,35 +30,6 @@
 	</style>
 </head>
 	<body>
-		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-		<script type="text/javascript">
-			var username = "RemarkableMe";
-			
-		</script>
-		<script type="text/javascript">		
-		$(document).ready(function() {
-			loadViewers();
-		function loadViewers(){
-			$.getJSON('https://api.twitch.tv/kraken/streams/'+encodeURIComponent(username)+"?callback=?", function(data) {
-
-			if(data["stream"]!=null){
-				if(data['streams']){
-					$('#viewer_counter').html("Channel offline.");
-				}else{
-						var viewer_count = data['stream']['viewers'];
-						$('#viewer_counter').html(viewer_count);
-						console.log(data);
-				}
-			}else{
-					$('#viewer_counter').html("Channel offline.");
-			}
-			});
-		}
-			setInterval(function(){
-				loadViewers();
-			}, 10000);
-		});
-		</script>
 		<div id="viewer_counter"></div>
 		<div id="pic">
 		<img src="123.png">
