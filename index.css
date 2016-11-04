@@ -91,15 +91,14 @@
 	z-index:-1;
 }
   .content  {
-	background-color: #a0b9df;
-    float: left;	
+	background-color: #a0b9df;	
     width: 1520px;
-	left:0;
     color: Black;
     font-family:  content;
 	text-align:center;
-	display: inline;
-	position:relative;		
+	display: block;
+	position:relative;
+    Margin: 0 auto;	
 }
  .content a {
 	position:center;
