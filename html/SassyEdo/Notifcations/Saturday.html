@@ -1,0 +1,99 @@
+<html>
+	<head>
+		<title>My Stream Animated Panels</title>
+		<meta http-equiv="refresh" content="100;URL=Instagram.html">
+		<style>
+			@font-face {
+				font-family: 'Adine Kirnberg';
+				src: url('fonts/Adine Kirnberg.ttf');
+				}
+			@font-face {
+				font-family: 'Adine Kirnberg'
+				src: url('fonts/Adine Kirnberg.ttf');
+				}
+			#reminderContainer {
+				width: 0px;
+				height: 0px;
+				background: #4e2577;
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				overflow: hidden;
+				color: black;
+				font-family: 'Adine Kirnberg';
+				-webkit-box-shadow: 0px 0px 20px #38155d;
+				-webkit-animation: test 10s 0s 1;
+				-webkit-animation-delay: 0s;
+				}
+			#reminderHeader {
+				width: 400px;
+				height: 40px;
+				background: #2f1c47;
+				position: relative;
+				overflow: hidden;
+				text-align: center;
+				font-size: 40px;
+				}
+			#reminder {
+				position: relative;
+				width: 260px;
+				height: 40px;
+				float: center;
+				right: 15px;
+				top: 0px;	
+				background: #2f1c47;
+				overflow: hidden;
+				}
+			#reminderContent {
+				width: 400px;
+				height: 100px;
+				background: #4e2577;
+				position: relative;
+				color: white;
+				font-size: 40px;
+				left: 20px;
+				top: 15px;
+				font-weight: bold;
+				line-height: 70%;
+				}
+			#Logo {
+				position: relative;
+				width: 50px;
+				height: 50px;
+				float: left;
+				right: 15px;
+				top: -15px;				
+				}
+			@-webkit-keyframes test {
+				0%, 100% {
+					width: 0px;
+					height: 40px;
+					}
+				20%, 80% {
+					width: 400px;
+					height: 40px;
+					}
+				30%, 70% {
+					width: 400px;
+					height: 100px;
+					}
+				}
+		</style>		
+	</head>
+	<body>
+		<div id="reminderContainer">
+			<div id="reminderHeader">
+				<span><image id="Reminder" src="images\Saturday.png" ></span>
+			</div>
+
+			<div id="reminderContent">
+				<image id="Logo" src="images\SaturdayLogo.png">
+				<div="reminderContentText">
+					<span>
+						Story Time Game Day					
+					</span>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
